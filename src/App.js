@@ -13,7 +13,7 @@ function App() {
     <div className="container">
       <h1 className="heading">PolyCalc</h1>
 
-      <h2 className="heading">First Polynomial</h2>
+      <h2>First Polynomial</h2>
 
       <div className="poly-container">
         <div className="poly">
@@ -34,7 +34,7 @@ function App() {
         <button onClick={() => setOperation("sub")} id="sub" className="math-btn">-</button>
       </div>
 
-      <h2 className="heading">Second Polynomial</h2>
+      <h2>Second Polynomial</h2>
 
       <div className="poly-container">
         <div className="poly">
@@ -50,17 +50,17 @@ function App() {
         </div>
       </div>
 
-      <h2 className="heading">Final Polynomial</h2>
+      <h2>Final Polynomial</h2>
 
       <div className="poly-container">
         <div className="poly">
-          <input type="number" name="p-f-a" readOnly className="mathInput" id="p-f-a" value={calcPoly(operation, p1_a, p2_a)} />
+          <p>{calcPoly(operation, p1_a, p2_a)} </p>
           <p>x²</p>
           <p>+</p>
-          <input type="number" name="p-f-b" readOnly className="mathInput" id="p-f-b" value={calcPoly(operation, p1_b, p2_b)} />
+          <p>{calcPoly(operation, p1_b, p2_b)} </p>
           <p>x</p>
           <p>+</p>
-          <input type="number" name="p-f-c" readOnly className="mathInput" id="p-f-c" value={calcPoly(operation, p1_c, p2_c)} />
+          <p>{calcPoly(operation, p1_c, p2_c)} </p>
           <p>=</p>
           <p>0</p>
         </div>
